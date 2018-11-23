@@ -7,6 +7,7 @@ import reduxThunk from 'redux-thunk';
 
 
 import App from './components/app';
+import SuccessView from './components/common/SuccessView';
 import reduxStore from './store';
 import './../sass/style.scss';
 
@@ -16,6 +17,7 @@ const store = createStoreWithMiddleware(reduxStore);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
+          <Route path="/success" component={SuccessView} />
       <Route path="/" component={App}>
       // Add child Routes here
       </Route>

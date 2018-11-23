@@ -1,5 +1,10 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router";
+
+
+
 const LoginView = () => (
+  <div className="container">
   <form className="form-signin">
      <div className="text-center mb-4">
        <h1 className="h3 mb-3 font-weight-normal">Please Login</h1>
@@ -17,5 +22,7 @@ const LoginView = () => (
 
      <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
    </form>
+     <Link to="/success">Success Routing Test</Link>
+   </div>
 )
 export default LoginView
