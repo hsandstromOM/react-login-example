@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 // Reducers will be imported here
+import reducer from './components/Login/LoginReducers'
 
 
 const store = combineReducers({

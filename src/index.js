@@ -4,6 +4,9 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Router, Route, browserHistory } from 'react-router';
 import reduxThunk from 'redux-thunk';
+import logger from 'redux-logger';
+
+
 
 
 import App from './components/app';
@@ -11,7 +14,7 @@ import SuccessView from './components/common/SuccessView';
 import reduxStore from './store';
 import './../sass/style.scss';
 
-const createStoreWithMiddleware = compose(applyMiddleware(reduxThunk)(createStore));
+const createStoreWithMiddleware = compose(applyMiddleware(reduxThunk, logger)(createStore));
 const store = createStoreWithMiddleware(reduxStore);
 
 ReactDOM.render(
