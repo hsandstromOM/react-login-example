@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@epegzz/sass-vars-loader": "3.2.0",
+    "@epegzz/sass-vars-loader": "3.4.0",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -30,7 +30,7 @@
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
+    "babel-loader": "^9.1.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
